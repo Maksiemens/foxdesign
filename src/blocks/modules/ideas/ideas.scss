@@ -1,0 +1,67 @@
+.ideas {
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+      @include font-primary(30px, $color-1, 800);
+      text-transform: uppercase;
+    }
+
+    &__subtitle {
+      @include font-primary(20px, $color-1, 400);
+    }
+  }
+
+  .content {
+    margin-top: 40px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 285px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__avatar {
+      width: 260px;
+      height: 235px;
+    }
+
+    &__img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__body {
+      margin-top: 15px;
+    }
+
+    &__header {
+    }
+
+    &__title {
+      @include font-primary(24px, $color-1, 500);
+      text-align: center;
+    }
+
+    &__text {
+      @include font-primary(18px, $color-1, 300, 27px);
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+
+  &__container {
+  }
+}

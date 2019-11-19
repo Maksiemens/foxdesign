@@ -1,11 +1,60 @@
-.footer {
-  // margin-top: 150px;
-  padding: 15px 0;
-  background: url('../img/bg_fox-on-moon.png') no-repeat 50% 100% / auto;
+.calculation {
+  // background: url('../img/web1.svg') no-repeat 0% 0% / auto;
+  height: 100vh;
+  position: relative;
+
+  // padding-top: 140px;
+
+  .info {
+    // background: url('../img/web1.png') no-repeat 0% 0% / auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    // max-width: 300px;
+    // transform: translate(50px);
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    position: relative;
+
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../img/web1.svg') no-repeat 0% 0% / auto;
+      // z-index:-1;
+    }
+  }
+
+  .heading {
+
+    &__title {
+      @include font-primary(30px, $color-3, 800);
+      text-align: center;
+    }
+  }
+
+  .content {
+    margin-top: 20px;
+
+    &__text {
+      @include font-primary(18px, $color-3, 400, 27px);
+
+      &_colored {
+        @include font-primary(18px, $color-4, 500, 27px);
+      }
+    }
+  }
 
   .action {
-    width: 100%;
-    max-width: 300px;
+    margin-top: 45px;
 
     &__text {
       @include font-primary(18px, $color-1, 500);
@@ -18,6 +67,7 @@
       display: block;
       position: relative;
       width: 100%;
+      max-width: 280px;
       border: 1px solid $color-7;
       border-radius: 34px;
       padding: 20px;
@@ -64,57 +114,10 @@
     }
   }
 
-  .social {
-    margin-top: 20px;
 
-    &__list {
-      display: flex;
-    }
-
-    &__item {
-
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
-    }
-
-    &__link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      border: 2px solid $color-4;
-
-      &:hover {
-        .social__svg {
-          fill: $color-4;
-        }
-      }
-    }
-
-    &__svg {
-      width: 30px;
-      height: 30px;
-      fill: $color-3;
-      transition: all 0.25s;
-    }
-  }
-
-  .copyright {
-    margin-top: 20px;
-
-    &__text {
-      @include font-primary(20px, $color-5, 300);
-    }
-  }
 
   &__container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
-    height: 585px;
   }
 }

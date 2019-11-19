@@ -1,124 +1,124 @@
-// .users {
-//   margin-top: 140px;
+.work {
+  margin-top: 100px;
 
-//   .heading {
-//     text-align: center;
+  .content {
+  }
 
-//     &__title {
-//       @include font-primary(42px, $color-2, 400);
-//     }
+  .parent{
+  }
 
-//     &__subtitle {
-//       @include font-primary(18px, $color-2, 400);
-//       margin-top: 30px;
-//     }
-//   }
+  .cards {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(275px, 355px));
+    // grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    // grid-column-gap: 35px;
+    // grid-row-gap: 60px;
 
-//   .content {
-//     margin-top: 60px;
-//   }
+    @include distribute-on-circle(5, 50em, 6em, false);
+    background: url('../img/img_sun.png') no-repeat center center / contain;
 
-//   .cards {
-//     display: grid;
-//     // grid-template-columns: repeat(auto-fit, minmax(275px, 355px));
-//     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-//     grid-column-gap: 35px;
-//     grid-row-gap: 60px;
+    margin: 5em auto 0;
+    border: solid 5px tomato;
+    // position: relative;
+    // width: 100vw;
+    // height: 100vh;
 
-//     &__action {
-//       grid-column: 2 / 3;
-//       justify-self: center;
-//       width: 100%;
-//       max-width: 290px;
-//     }
+    // width: 100%;
+    // height: 765px;
+    // padding-bottom: 100%;
 
-//     &__button {
-//       @include font-secondary(20px, $color-3, 700);
-//       width: 100%;
-//       border-radius: 4px;
-//       border: 2px solid $color-3;
-//       padding: 10px;
-//       transition: all 0.25s;
+    // border: 1px solid rgba(0,0,0,0.1);
+    // border-radius: 50%;
+    // transform: rotate(0deg);
 
-//       &:hover {
-//         @include font-secondary(20px, $color-4, 700);
-//         background-color: $color-6;
-//       }
+  }
 
-//       &:active {
-//         position: relative;
-//         top: 1px;
-//       }
-//     }
-//   }
+  .card {
+    display: flex;
+    align-items: center;
+    width: 380px;
 
-//   .card {
-//     display: flex;
+    // position: absolute;
+    // top: -50px;
+    // left: (765/2 - 100/2) * 1px;
 
-//     &__avatar {
-//       margin-right: 10px;
-//     }
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
 
-//     &__picture {
-//     }
+    &:nth-child(1) {
+      // transform: rotate(180deg) translate(25em) rotate(-180deg);
+      // top: -50px;
+      // left: (765/2 - 350/2) * 1px;
+    }
 
-//     &__img {
-//       display: block;
-//       object-fit: cover;
-//       border-radius: 50%;
-//     }
+    &:nth-child(2) {
+      // transform: rotate(135deg) translate(25em) rotate(-135deg);
 
-//     &__body {
-//       margin-top: 25px;
-//       overflow: hidden;
-//     }
+    }
 
-//     &__header {
-//     }
+    &:nth-child(3) {
+      // transform: rotate(90deg) translate(25em) rotate(-90deg);
+    }
 
-//     &__title {
-//       @include font-primary(22px, $color-2, 700);
-//       max-width: 225px;
-//     }
+    &:nth-child(4) {
+      // transform: rotate(45deg) translate(25em) rotate(-45deg);
+    }
 
-//     &__list {
-//       margin-top: 20px;
-//     }
+    &:nth-child(5) {
+      // transform: rotate(0deg) translate(25em) rotate(0deg);
+    }
 
-//     &__item {
-//       @include font-secondary(14px, $color-10, 400);
+    &__avatar {
+      width: 100px;
+      height: 100px;
 
-//       &_ellipsis {
-//         white-space: nowrap;
-//         overflow: hidden;
-//         text-overflow: ellipsis;
-//       }
+      // &:nth-child(1) {
+      //   margin-left: 30px;
+      // }
 
-//       &.active-tooltip {
-//         &:after {
-//           @include font-secondary(14px, $color-1, 400);
-//           content: attr(data-tooltip-text);
-//           display: block;
-//           position: absolute;
-//           top: -9999em;
-//           padding: 5px 10px;
-//           box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.11);
-//           border-radius: 4px;
-//           background-color: #707070;
-//           transform: translate(20px, 0);
-//           transition: all 0.25s;
-//           opacity: 0;
-//         }
+      // &:nth-child(2) {
+      //   margin-left: 30px;
+      // }
 
-//         &:hover::after {
-//           top: auto;
-//           opacity: 1;
-//           transform: translate(20px, 20px);
-//         }
-//       }
-//     }
-//   }
+      // &:nth-child(3) {
+      //   // margin-left: 30px;
+      // }
 
-//   &__container {
-//   }
-// }
+      // &:nth-child(4) {
+      //   margin-right: 30px;
+      // }
+
+      // &:nth-child(5) {
+      //   margin-right: 30px;
+      // }
+    }
+
+    &__avatar {
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__body {
+    }
+
+    &__header {
+    }
+
+    &__title {
+      @include font-primary(20px, $color-1, 400);
+    }
+
+    &__text {
+      @include font-primary(16px, $color-1, 300, 24px);
+      margin-top: 10px;
+    }
+  }
+
+  &__container {
+  }
+}

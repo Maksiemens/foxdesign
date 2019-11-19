@@ -13,6 +13,7 @@
 
     &__subtitle {
       @include font-primary(20px, $color-1, 400);
+      margin-top: 10px;
     }
   }
 

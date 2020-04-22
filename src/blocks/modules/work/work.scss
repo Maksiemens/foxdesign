@@ -14,10 +14,10 @@
     // grid-column-gap: 35px;
     // grid-row-gap: 60px;
 
-    @include distribute-on-circle(5, 50em, 6em, false);
+    // @include distribute-on-circle(5, 540px, 300px, false);
     background: url('../img/img_sun.png') no-repeat center center / contain;
 
-    margin: 5em auto 0;
+    // margin: 5em auto 0;
     border: solid 5px tomato;
     // position: relative;
     // width: 100vw;
@@ -31,12 +31,41 @@
     // border-radius: 50%;
     // transform: rotate(0deg);
 
+    // position: relative;
+    // width: 540px; // 24em;
+    // height: 540px; //24em;
+    // // padding: 2.8em;
+    //   /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    // border: dashed 2px tomato;
+    // border-radius: 50%;
+    margin: auto;
+
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      // margin: -50px;
+      transform: translate(-50%, -50%);
+    }
+
   }
 
   .card {
     display: flex;
     align-items: center;
-    width: 380px;
+    // width: 380px;
+
+    // display: block;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // width: 4em;
+    // height: 4em;
+    // margin: -50px;
 
     // position: absolute;
     // top: -50px;
@@ -46,27 +75,34 @@
     // top: 50%;
     // left: 50%;
 
-    &:nth-child(1) {
+    &:nth-child(2) {
       // transform: rotate(180deg) translate(25em) rotate(-180deg);
       // top: -50px;
       // left: (765/2 - 350/2) * 1px;
-    }
-
-    &:nth-child(2) {
-      // transform: rotate(135deg) translate(25em) rotate(-135deg);
-
+      // transform: rotate(-25deg) translate(270px) rotate(25deg);
     }
 
     &:nth-child(3) {
-      // transform: rotate(90deg) translate(25em) rotate(-90deg);
+      // transform: rotate(135deg) translate(25em) rotate(-135deg);
+      // transform: rotate(45deg) translate(270px) rotate(-45deg);
+
     }
 
     &:nth-child(4) {
-      // transform: rotate(45deg) translate(25em) rotate(-45deg);
+      // transform: rotate(90deg) translate(25em) rotate(-90deg);
+      // transform: rotate(90deg) translate(270px) rotate(-90deg);
+      // flex-direction: column;
     }
 
     &:nth-child(5) {
+      // transform: rotate(45deg) translate(25em) rotate(-45deg);
+      // transform: translate(-270px);
+      // transform: rotate(135deg) translate(270px) rotate(-135deg);
+    }
+
+    &:nth-child(6) {
       // transform: rotate(0deg) translate(25em) rotate(0deg);
+      // transform: rotate(205deg) translate(270px) rotate(-205deg);
     }
 
     &__avatar {
@@ -122,3 +158,29 @@
   &__container {
   }
 }
+
+
+/*
+https://codepen.io/dbpas/pen/LGudb
+https://codepen.io/soybisonte/pen/ZyZxbg
+https://stackoverflow.com/questions/12813573/position-icons-into-circle
+
+http://jsfiddle.net/9eNqY/
+https://css-tricks.com/snippets/sass/placing-items-circle/
+https://codepen.io/HugoGiraudel/pen/vEJXGm
+
+https://codepen.io/soybisonte/pen/ZyZxbg
+
+
+
+
+
+
+https://nplanner.ru/
+https://codepen.io/HugoGiraudel/pen/vEJXGm
+https://hugogiraudel.com/2013/04/02/items-on-circle/
+https://www.freecodecamp.org/news/css-shapes-explained-how-to-draw-a-circle-triangle-and-more-using-pure-css/
+https://stackoverflow.com/questions/44358067/evenly-distribute-points-on-a-circle
+http://kodhus.com/newsite/put-items-evenly-circles-circumference/
+http://jsfiddle.net/codepo8/tgEx6/8/
+*/

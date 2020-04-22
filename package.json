@@ -67,6 +67,7 @@
         "yargs": "^14.0.0"
     },
     "dependencies": {
+        "jquery": "^3.5.0",
         "smart-grid": "^2.1.2"
     }
 }

@@ -1,7 +1,9 @@
-# Тестовое задание на позицию фронтенд разработчика
-* Front-end developer (Angular, React, Vue)
+# Портфолио для foxdesign
+* Front-end developer 
 
 # Ссылки которые будут использоваться скорее всего
+* https://greensock.com/forums/topic/19214-svg-organice-shape-morph/
+* https://greensock.com/docs/v3/Plugins/MorphSVGPlugin
 * https://www.cedricpereira.com/
 * https://resvescowork.pt/Background-anim/index2.html
 * https://animejs.com/

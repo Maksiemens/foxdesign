@@ -55,3 +55,106 @@
 //   &__container {
 //   }
 // }
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 0 85px 0;
+  // height: 700px;
+}
+
+// .swiper-container {
+//   width: 600px;
+//   height: 300px;
+// }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // height: 700px;
+}
+
+.relationships.portfolio {
+
+
+
+  .card {
+
+    &__figure {
+      // width: 420px;
+    }
+
+    &__img {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+  }
+
+}
+
+
+#svg {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#path1 {
+  fill: #2196F3;
+}
+
+#path2 {
+  fill: #64b5f6;
+}
+
+.item__img {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+// .jelly-container,
+// .jelly-canvas {
+//   width: 400px;
+//   height: 400px;
+// }
+
+.jelly-container,
+.jelly-canvas {
+  // width: 400px;
+  // height: 859;
+}
+
+.jelly-container {
+  width: 1000px;
+  height: 1000px;
+}
+
+// .jelly-canvas {
+//   width: 500px;
+//   height: 659px;
+// }
+
+// .jelly-container {
+//   position: relative;
+//   display: inline-block;
+//   left: 50%;
+//   margin-left: -200px;
+// }

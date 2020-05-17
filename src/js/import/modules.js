@@ -12,4 +12,4 @@ import '%modules%/introduce/introduce';
 
 import '%modules%/footer/footer';
 
-import '%modules%/sign-up/sign-up';
+// import '%modules%/sign-up/sign-up';
